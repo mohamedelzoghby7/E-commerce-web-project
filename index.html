@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="icon" type="image/x-icon" href="logo.png" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My E-Commerce</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css"/>
+    <script src="script.js" defer></script>
+  </head>
+
+  <body class="bg-light">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-white shadow-sm">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img
+            src="logo.png"
+            alt="element 6"
+            class="navbar-logo"
+            height="60px"
+            width="auto"
+          />
+        </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mainNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="products.html">Products</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="cart.html">Cart</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="favorites.html">favorites</a>
+            </li>
+          </ul>
+
+          <div class="ms-3">
+            <button class="btn btn-outline-primary me-2">Sign in</button>
+            <button class="btn btn-primary">Sign up</button>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Head Section -->
+    <header class="text-center py-5 bg-white shadow-sm mt-3 container rounded">
+      <h1 class="fw-bold">
+        Welcome to
+        <img
+          src="logo.png"
+          alt="MyShop Logo"
+          class="welcome-logo"
+          height="150px vertical-alin: middle;"
+        />
+      </h1>
+      <p class="text-muted">
+        Discover our amazing products at student-friendly prices!
+      </p>
+    </header>
+
+    <!-- Products Section -->
+    <section class="container my-5">
+      <h2 class="fw-bold mb-4 text-center">Featured Products</h2>
+
+      <div class="row g-4">
+        <!-- Product 1 -->
+        <div class="col-md-4 col-lg-3">
+          <div class="card p-2 shadow-sm">
+            <img
+              src="https://static.zara.net/assets/public/9cbf/4d8c/7d0345609b83/8a09b84bab7b/00840353802-e1/00840353802-e1.jpg?ts=1754996661853&w=314"
+              class="card-img-top"
+              alt=""
+            />
+            <div class="card-body text-center">
+              <p class="fw-bold">gary jeans</p>
+              <p class="text-muted">$10</p>
+              <button
+                class="btn btn-outline-danger heart-btn"
+                data-name="Product 1"
+                data-price="$10"
+                data-img="https://static.zara.net/assets/public/9cbf/4d8c/7d0345609b83/8a09b84bab7b/00840353802-e1/00840353802-e1.jpg?ts=1754996661853&w=314"
+              >
+                ♥
+              </button>
+
+              <button class="btn btn-dark ms-2 add-to-cart">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="col-md-4 col-lg-3">
+          <div class="card p-2 shadow-sm">
+            <img
+              src="https://static.zara.net/assets/public/8734/5394/72214c0f9ed8/47f054512dc0/00761311800-000-e1/00761311800-000-e1.jpg?ts=1754985838205&w=314"
+              class="card-img-top"
+              alt=""
+            />
+            <div class="card-body text-center">
+              <p class="fw-bold">black QUARTER-ZIP</p>
+              <p class="text-muted">$15</p>
+              <button
+                class="btn btn-outline-danger heart-btn"
+                data-name="Product 1"
+                data-price="$10"
+                data-img="https://static.zara.net/assets/public/8734/5394/72214c0f9ed8/47f054512dc0/00761311800-000-e1/00761311800-000-e1.jpg?ts=1754985838205&w=314"
+              >
+                ♥
+              </button>
+
+              <button
+                class="btn btn-dark ms-2 add-to-cart"
+                data-name="FLARE FIT JEANS"
+                data-price="10"
+                data-image="IMAGE_URL_HERE"
+              >
+                Add to Cart
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="col-md-4 col-lg-3">
+          <div class="card p-2 shadow-sm">
+            <img
+              src="https://static.zara.net/assets/public/5793/58b3/b8524188953c/2d08aea53eb1/03166330490-e1/03166330490-e1.jpg?ts=1760964466567&w=314"
+              class="card-img-top"
+              alt=""
+            />
+            <div class="card-body text-center">
+              <p class="fw-bold">pullover</p>
+              <p class="text-muted">$20</p>
+              <button
+                class="btn btn-outline-danger heart-btn"
+                data-name="Product 1"
+                data-price="$10"
+                data-img="https://static.zara.net/assets/public/5793/58b3/b8524188953c/2d08aea53eb1/03166330490-e1/03166330490-e1.jpg?ts=1760964466567&w=314"
+              >
+                ♥
+              </button>
+
+              <button
+                class="btn btn-dark ms-2 add-to-cart"
+                data-name="FLARE FIT JEANS"
+                data-price="10"
+                data-image="IMAGE_URL_HERE"
+              >
+                Add to Cart
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 4 -->
+        <div class="col-md-4 col-lg-3">
+          <div class="card p-2 shadow-sm">
+            <img
+              src="https://static.zara.net/assets/public/d64e/8777/2d0742d3a2fc/ec6e0cec3450/01887455250-e1/01887455250-e1.jpg?ts=1762941754423&w=314"
+              class="card-img-top"
+              alt=""
+            />
+            <div class="card-body text-center">
+              <p class="fw-bold">white T-shirt</p>
+              <p class="text-muted">$25</p>
+              <button
+                class="btn btn-outline-danger heart-btn"
+                data-name="Product 1"
+                data-price="$10"
+                data-img="IMAGE_URL"
+              >
+                ♥
+              </button>
+
+              <button
+                class="btn btn-dark ms-2 add-to-cart"
+                data-name="FLARE FIT JEANS"
+                data-price="10"
+                data-image="IMAGE_URL_HERE"
+              >
+                Add to Cart
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 5 -->
+        <div class="col-md-4 col-lg-3">
+          <div class="card p-2 shadow-sm">
+            <img
+              src="https://static.zara.net/assets/public/9505/bddf/0da945c3b6b7/770ad8ad6cdd/08281104800-e1/08281104800-e1.jpg?ts=1756131216466&w=314"
+              class="card-img-top"
+              alt=""
+            />
+            <div class="card-body text-center">
+              <p class="fw-bold">black coat</p>
+              <p class="text-muted">$30</p>
+              <button
+                class="btn btn-outline-danger heart-btn"
+                data-name="Product 1"
+                data-price="$10"
+                data-img="IMAGE_URL"
+              >
+                ♥
+              </button>
+
+              <button
+                class="btn btn-dark ms-2 add-to-cart"
+                data-name="FLARE FIT JEANS"
+                data-price="10"
+                data-image="IMAGE_URL_HERE"
+              >
+                Add to Cart
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 6 -->
+        <div class="col-md-4 col-lg-3">
+          <div class="card p-2 shadow-sm">
+            <img
+              src="https://static.zara.net/assets/public/f315/3289/30a74bbdafb5/6accf640fb21/04806330822-e1/04806330822-e1.jpg?ts=1755522290205&w=314"
+              class="card-img-top"
+              alt=""
+            />
+            <div class="card-body text-center">
+              <p class="fw-bold">black wide jeans</p>
+              <p class="text-muted">$50</p>
+              <button
+                class="btn btn-outline-danger heart-btn"
+                data-name="Product 1"
+                data-price="$10"
+                data-img="IMAGE_URL"
+              >
+                ♥
+              </button>
+
+              <button
+                class="btn btn-dark ms-2 add-to-cart"
+                data-name="FLARE FIT JEANS"
+                data-price="10"
+                data-image="IMAGE_URL_HERE"
+              >
+                Add to Cart
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 7 -->
+        <div class="col-md-4 col-lg-3">
+          <div class="card p-2 shadow-sm">
+            <img
+              src="https://static.zara.net/assets/public/a4a8/82cb/56a6493f8acb/1d7bc3d3f596/12002620700-e1/12002620700-e1.jpg?ts=1755513360098&w=314"
+              class="card-img-top"
+              alt=""
+            />
+            <div class="card-body text-center">
+              <p class="fw-bold">havan shoe</p>
+              <p class="text-muted">$40</p>
+              <button
+                class="btn btn-outline-danger heart-btn"
+                data-name="Product 1"
+                data-price="$10"
+                data-img="IMAGE_URL"
+              >
+                ♥
+              </button>
+
+              <button
+                class="btn btn-dark ms-2 add-to-cart"
+                data-name="FLARE FIT JEANS"
+                data-price="10"
+                data-image="IMAGE_URL_HERE"
+              >
+                Add to Cart
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 8 -->
+        <div class="col-md-4 col-lg-3">
+          <div class="card p-2 shadow-sm">
+            <img
+              src="https://static.zara.net/assets/public/7735/0372/ee1f473f9ddd/3c18efc188e0/20213001999-e1/20213001999-e1.jpg?ts=1754558636195&w=314"
+              class="card-img-top"
+              alt=""
+            />
+            <div class="card-body text-center">
+              <p class="fw-bold">zara Perfume</p>
+              <p class="text-muted">$60</p>
+              <button
+                class="btn btn-outline-danger heart-btn"
+                data-name="Product 1"
+                data-price="$10"
+                data-img="IMAGE_URL"
+              >
+                ♥
+              </button>
+
+              <button
+                class="btn btn-dark ms-2 add-to-cart"
+                data-name="FLARE FIT JEANS"
+                data-price="10"
+                data-image="IMAGE_URL_HERE"
+              >
+                Add to Cart
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 9 -->
+        <div class="col-md-4 col-lg-3">
+          <div class="card p-2 shadow-sm">
+            <img
+              src="https://static.zara.net/assets/public/0a72/df63/58734f42aee6/b8d05ef8fff5/00526460505-000-e1/00526460505-000-e1.jpg?ts=1754985822572&w=314"
+              class="card-img-top"
+              alt=""
+            />
+            <div class="card-body text-center">
+              <p class="fw-bold">polo T-shirt</p>
+              <p class="text-muted">$70</p>
+              <button
+                class="btn btn-outline-danger heart-btn"
+                data-name="Product 1"
+                data-price="$10"
+                data-img="IMAGE_URL"
+              >
+                ♥
+              </button>
+
+              <button
+                class="btn btn-dark ms-2 add-to-cart"
+                data-name="FLARE FIT JEANS"
+                data-price="10"
+                data-image="IMAGE_URL_HERE"
+              >
+                Add to Cart
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="container my-5">
+      <h2 class="fw-bold text-center mb-4">Categories</h2>
+
+      <div class="row g-4">
+        <div class="col-md-4 col-lg-2 col-sm-6">
+          <div class="card shadow-sm">
+            <img
+              src="https://static.zara.net/assets/public/4388/72f3/ee004de7ae21/2b949645d680/00761412251-e1/00761412251-e1.jpg"
+              class="card-img-top"
+              alt=""
+            />
+            <div class="card-body text-center">
+              <p class="fw-bold">T-shirts</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-lg-2 col-sm-6">
+          <div class="card shadow-sm">
+            <img
+              src="https://static.zara.net/assets/public/ed11/935f/28cc4feab9ba/573b78842b86/06318409505-e1/06318409505-e1.jpg"
+              class="card-img-top"
+              alt=""
+            />
+            <div class="card-body text-center">
+              <p class="fw-bold">Jackets</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-lg-2 col-sm-6">
+          <div class="card shadow-sm">
+            <img
+              src="https://static.zara.net/assets/public/aa37/1471/7c374eb9b114/428c945441ff/12229520202-e1/12229520202-e1.jpg"
+              class="card-img-top"
+              alt=""
+            />
+            <div class="card-body text-center">
+              <p class="fw-bold">Shoes</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-lg-2 col-sm-6">
+          <div class="card shadow-sm">
+            <img
+              src="https://static.zara.net/assets/public/fa4c/e724/75cd4481bcc8/3f515ee5e805/04302305922-e1/04302305922-e1.jpg"
+              class="card-img-top"
+              alt=""
+            />
+            <div class="card-body text-center">
+              <p class="fw-bold">Pants</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-lg-2 col-sm-6">
+          <div class="card shadow-sm">
+            <img
+              src="https://static.zara.net/assets/public/1c1b/af6c/dd9e49cfa1c3/b87e2c81449b/20220320999-e1/20220320999-e1.jpg"
+              class="card-img-top"
+              alt=""
+            />
+            <div class="card-body text-center">
+              <p class="fw-bold">Perfumes</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3 mt-4">
+      <p class="mb-0">&copy; 2025 element 6. All rights reserved.</p>
+    </footer>
+  </body>
+</html>

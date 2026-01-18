@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My E-Commerce</title>
+     <script src="script.js" defer></script>
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body class="bg-light">
+    
+
+    <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg bg-white shadow-sm">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img
+            src="logo.png"
+            alt="3NSYM"
+            class="navbar-logo"
+            height="60px"
+            width="auto"
+          />
+        </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mainNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="products.html">Products</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            <li class="nav-item"><a class="nav-link" href="cart.html">Cart</a></li>
+            <li class="nav-item"><a class="nav-link" href="favorites.html">favorites</a></li>
+          </ul>
+
+          <div class="ms-3">
+            <button class="btn btn-outline-primary me-2">Sign in</button>
+            <button class="btn btn-primary">Sign up</button>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Products Section -->
+    <section class="container my-5">
+      <h2 class="fw-bold mb-4 text-center">Featured Products</h2>
+
+      <div class="row g-4">
+        <!-- Product 1 -->
+        <div class="col-md-4 col-lg-3">
+          <div class="card p-2 shadow-sm">
+            <img
+              src="https://static.zara.net/assets/public/9cbf/4d8c/7d0345609b83/8a09b84bab7b/00840353802-e1/00840353802-e1.jpg?ts=1754996661853&w=314"
+              class="card-img-top"
+              alt=""
+            />
+            <div class="card-body text-center">
+              <p class="fw-bold">FLARE FIT JEANS</p>
+              <p class="text-muted">$10</p>
+              <button class="btn btn-outline-danger heart-btn">♥</button>
+              <button class="btn btn-dark ms-2 add-to-cart">
+  Add to Cart
+</button>
+
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="col-md-4 col-lg-3">
+          <div class="card p-2 shadow-sm">
+            <img
+              src="https://static.zara.net/assets/public/8734/5394/72214c0f9ed8/47f054512dc0/00761311800-000-e1/00761311800-000-e1.jpg?ts=1754985838205&w=314"
+              class="card-img-top"
+              alt=""
+            />
+            <div class="card-body text-center">
+              <p class="fw-bold">BASIC QUARTER-ZIP SWEATSHIRT</p>
+              <p class="text-muted">$15</p>
+              <button class="btn btn-outline-danger heart-btn">♥</button>
+              <button class="btn btn-dark ms-2 add-to-cart">
+  Add to Cart
+</button>
+
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="col-md-4 col-lg-3">
+          <div class="card p-2 shadow-sm">
+            <img
+              src="https://static.zara.net/assets/public/5793/58b3/b8524188953c/2d08aea53eb1/03166330490-e1/03166330490-e1.jpg?ts=1760964466567&w=314"
+              class="card-img-top"
+              alt=""
+            />
+            <div class="card-body text-center">
+              <p class="fw-bold">Pullover "gray"</p>
+              <p class="text-muted">$20</p>
+              <button class="btn btn-outline-danger heart-btn">♥</button>
+              <button class="btn btn-dark ms-2 add-to-cart">
+  Add to Cart
+</button>
+
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 4 -->
+        <div class="col-md-4 col-lg-3">
+          <div class="card p-2 shadow-sm">
+            <img
+              src="https://static.zara.net/assets/public/d64e/8777/2d0742d3a2fc/ec6e0cec3450/01887455250-e1/01887455250-e1.jpg?ts=1762941754423&w=314"
+              class="card-img-top"
+              alt=""
+            />
+            <div class="card-body text-center">
+              <p class="fw-bold">HEAVYWEIGHT REGULAR FIT BASIC T-SHIRT</p>
+              <p class="text-muted">$25</p>
+              <button class="btn btn-outline-danger heart-btn">♥</button>
+              <button class="btn btn-dark ms-2 add-to-cart">
+  Add to Cart
+</button>
+
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 5 -->
+        <div class="col-md-4 col-lg-3">
+          <div class="card p-2 shadow-sm">
+            <img
+              src="https://static.zara.net/assets/public/9505/bddf/0da945c3b6b7/770ad8ad6cdd/08281104800-e1/08281104800-e1.jpg?ts=1756131216466&w=314"
+              class="card-img-top"
+              alt=""
+            />
+            <div class="card-body text-center">
+              <p class="fw-bold">DOUBLE-BREASTED WOOL BLEND COAT AARON LEVINE X ZARA</p>
+              <p class="text-muted">$30</p>
+              <button class="btn btn-outline-danger heart-btn">♥</button>
+              <button class="btn btn-dark ms-2 add-to-cart">
+  Add to Cart
+</button>
+
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 6 -->
+        <div class="col-md-4 col-lg-3">
+          <div class="card p-2 shadow-sm">
+            <img
+              src="https://static.zara.net/assets/public/f315/3289/30a74bbdafb5/6accf640fb21/04806330822-e1/04806330822-e1.jpg?ts=1755522290205&w=314"
+              class="card-img-top"
+              alt=""
+            />
+            <div class="card-body text-center">
+              <p class="fw-bold">BAGGY FIT JEANS</p>
+              <p class="text-muted">$50</p>
+              <button class="btn btn-outline-danger heart-btn">♥</button>
+              <button class="btn btn-dark ms-2 add-to-cart">
+  Add to Cart
+</button>
+
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 7 -->
+        <div class="col-md-4 col-lg-3">
+          <div class="card p-2 shadow-sm">
+            <img
+              src="https://static.zara.net/assets/public/a4a8/82cb/56a6493f8acb/1d7bc3d3f596/12002620700-e1/12002620700-e1.jpg?ts=1755513360098&w=314"
+              class="card-img-top"
+              alt=""
+            />
+            <div class="card-body text-center">
+              <p class="fw-bold">POINTED CHELSEA BOOTS</p>
+              <p class="text-muted">$40</p>
+              <button class="btn btn-outline-danger heart-btn">♥</button>
+              <button class="btn btn-dark ms-2 add-to-cart">
+  Add to Cart
+</button>
+
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 8 -->
+        <div class="col-md-4 col-lg-3">
+          <div class="card p-2 shadow-sm">
+            <img
+              src="https://static.zara.net/assets/public/7735/0372/ee1f473f9ddd/3c18efc188e0/20213001999-e1/20213001999-e1.jpg?ts=1754558636195&w=314"
+              class="card-img-top"
+              alt=""
+            />
+            <div class="card-body text-center">
+              <p class="fw-bold">VANILLA COLLECTION 02: UNIQUE/HYPNOTIC/SEDUCTIVE EDP 100 ML / 3.38 fl. oz</p>
+              <p class="text-muted">$60</p>
+              <button class="btn btn-outline-danger heart-btn">♥</button>
+              <button class="btn btn-dark ms-2 add-to-cart">
+  Add to Cart
+</button>
+
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 9 -->
+        <div class="col-md-4 col-lg-3">
+          <div class="card p-2 shadow-sm">
+            <img
+              src="https://static.zara.net/assets/public/0a72/df63/58734f42aee6/b8d05ef8fff5/00526460505-000-e1/00526460505-000-e1.jpg?ts=1754985822572&w=314"
+              class="card-img-top"
+              alt=""
+            />
+            <div class="card-body text-center">
+              <p class="fw-bold">SHORT SLEEVE RUNNING T-SHIRT</p>
+              <p class="text-muted">$70</p>
+              <button class="btn btn-outline-danger heart-btn">♥</button>
+              <button class="btn btn-dark ms-2 add-to-cart">
+  Add to Cart
+</button>
+
+            </div>
+          </div>
+        </div>
+      <!-- Product 10 -->
+        <div class="col-md-4 col-lg-3">
+          <div class="card p-2 shadow-sm">
+            <img
+              src="https://static.zara.net/assets/public/5f99/0231/d3814b679341/3283b69fc286/00761370803-000-e1/00761370803-000-e1.jpg?ts=1754985839053&w=330"
+              class="card-img-top"
+              alt=""
+            />
+            <div class="card-body text-center">
+              <p class="fw-bold">BASIC HOODIE</p>
+              <p class="text-muted">$90</p>
+              <button class="btn btn-outline-danger heart-btn">♥</button>
+              <button class="btn btn-dark ms-2 add-to-cart">
+  Add to Cart
+</button>
+
+            </div>
+          </div>
+        </div>
+      <!-- Product 11 -->
+        <div class="col-md-4 col-lg-3">
+          <div class="card p-2 shadow-sm">
+            <img
+              src="https://static.zara.net/assets/public/c6e6/f52a/721c40ed8688/1149e55cdd91/00761440803-000-e1/00761440803-000-e1.jpg?ts=1754985841318&w=330"
+              class="card-img-top"
+              alt=""
+            />
+            <div class="card-body text-center">
+              <p class="fw-bold">BASIC WIDE-LEG JOGGERS</p>
+              <p class="text-muted">$90</p>
+              <button class="btn btn-outline-danger heart-btn">♥</button>
+              <button class="btn btn-dark ms-2 add-to-cart">
+  Add to Cart
+</button>
+
+            </div>
+          </div>
+        </div>
+      <!-- Product 12 -->
+        <div class="col-md-4 col-lg-3">
+          <div class="card p-2 shadow-sm">
+            <img
+              src="https://static.zara.net/assets/public/5e31/bdff/ebba45929de2/c00879f696ca/00526310390-e1/00526310390-e1.jpg?ts=1760599226092&w=330"
+              class="card-img-top"
+              alt=""
+            />
+            <div class="card-body text-center">
+              <p class="fw-bold">CONTRAST COLLAR POLO SWEATSHIRT</p>
+              <p class="text-muted">$90</p>
+              <button class="btn btn-outline-danger heart-btn">♥</button>
+              <button class="btn btn-dark ms-2 add-to-cart">
+  Add to Cart
+</button>
+
+            </div>
+          </div>
+        </div>
+      <!-- Product 13 -->
+        <div class="col-md-4 col-lg-3">
+          <div class="card p-2 shadow-sm">
+            <img
+              src="https://static.zara.net/assets/public/0609/78c5/c3154238a337/b95ae69c14b0/20210755999-e1/20210755999-e1.jpg?ts=1754561195344&w=1024"
+              class="card-img-top"
+              alt=""
+            />
+            <div class="card-body text-center">
+              <p class="fw-bold">GREEN SAVAGE + BLUE SPIRIT EDT 2 X 90 ML / 3.17 oz</p>
+              <p class="text-muted">$90</p>
+              <button class="btn btn-outline-danger heart-btn">♥</button>
+              <button class="btn btn-dark ms-2 add-to-cart">
+  Add to Cart
+</button>
+
+            </div>
+          </div>
+        </div>
+      <!-- Product 14 -->
+        <div class="col-md-4 col-lg-3">
+          <div class="card p-2 shadow-sm">
+            <img
+              src="https://static.zara.net/assets/public/566e/9d0d/7df045a585c9/b66e668a4a98/04087453250-e1/04087453250-e1.jpg?ts=1762342283872&w=330"
+              class="card-img-top"
+              alt=""
+            />
+            <div class="card-body text-center">
+              <p class="fw-bold">BASIC RIBBED TANK TOP</p>
+              <p class="text-muted">$90</p>
+              <button class="btn btn-outline-danger heart-btn">♥</button>
+              <button class="btn btn-dark ms-2 add-to-cart">
+  Add to Cart
+</button>
+
+            </div>
+          </div>
+        </div>
+      <!-- Product 15 -->
+        <div class="col-md-4 col-lg-3">
+          <div class="card p-2 shadow-sm">
+            <img
+              src="https://static.zara.net/assets/public/8983/a94a/a9504d098187/388828323e82/00761372800-e1/00761372800-e1.jpg?ts=1754034512663&w=330"
+              class="card-img-top"
+              alt=""
+            />
+            <div class="card-body text-center">
+              <p class="fw-bold">RELAXED FIT JOGGER TROUSERS</p>
+              <p class="text-muted">$90</p>
+              <button class="btn btn-outline-danger heart-btn">♥</button>
+              <button class="btn btn-dark ms-2 add-to-cart">
+  Add to Cart
+</button>
+
+            </div>
+          </div>
+        </div>
+      <!-- Product 16 -->
+        <div class="col-md-4 col-lg-3">
+          <div class="card p-2 shadow-sm">
+            <img
+              src="https://static.zara.net/assets/public/18e3/8d1f/b1de4cf7993d/97a2ac642235/00155365700-e1/00155365700-e1.jpg?ts=1759746708634&w=330"
+              class="card-img-top"
+              alt=""
+            />
+            <div class="card-body text-center">
+              <p class="fw-bold">EMBOSSED FAUX LEATHER JACKET</p>
+              <p class="text-muted">$90</p>
+              <button class="btn btn-outline-danger heart-btn">♥</button>
+              <button class="btn btn-dark ms-2 add-to-cart">
+  Add to Cart
+</button>
+
+            </div>
+          </div>
+        </div>
+      <!-- Product 17 -->
+        <div class="col-md-4 col-lg-3">
+          <div class="card p-2 shadow-sm">
+            <img
+              src="https://static.zara.net/assets/public/89ad/c1b1/e1954f4dbee6/66f638808f3e/00155752800-e1/00155752800-e1.jpg?ts=1764235709753&w=330"
+              class="card-img-top"
+              alt=""
+            />
+            <div class="card-body text-center">
+              <p class="fw-bold">LEATHER EFFECT JACKET</p>
+              <p class="text-muted">$90</p>
+              <button class="btn btn-outline-danger heart-btn">♥</button>
+              <button class="btn btn-dark ms-2 add-to-cart">
+  Add to Cart
+</button>
+
+            </div>
+          </div>
+        </div>
+      <!-- Product 18 -->
+        <div class="col-md-4 col-lg-3">
+          <div class="card p-2 shadow-sm">
+            <img
+              src="https://static.zara.net/assets/public/3288/259f/acd44a439ebb/9c60cbfcb235/03548301800-e1/03548301800-e1.jpg?ts=1764663255679&w=330"
+              class="card-img-top"
+              alt=""
+            />
+            <div class="card-body text-center">
+              <p class="fw-bold">DOUBLE-FACED LEATHER EFFECT JACKET</p>
+              <p class="text-muted">$90</p>
+              <button class="btn btn-outline-danger heart-btn">♥</button>
+              <button class="btn btn-dark ms-2 add-to-cart">
+  Add to Cart
+</button>
+
+            </div>
+          </div>
+        </div>
+      <!-- Product 19 -->
+        <div class="col-md-4 col-lg-3">
+          <div class="card p-2 shadow-sm">
+            <img
+              src="https://static.zara.net/assets/public/4384/2a87/520f47249294/a8821b54a78e/00993701800-e1/00993701800-e1.jpg?ts=1761724282541&w=330"
+              class="card-img-top"
+              alt=""
+            />
+            <div class="card-body text-center">
+              <p class="fw-bold">CONTRAST FAUX LEATHER JACKET</p>
+              <p class="text-muted">$90</p>
+              <button class="btn btn-outline-danger heart-btn">♥</button>
+              <button class="btn btn-dark ms-2 add-to-cart">
+  Add to Cart
+</button>
+
+            </div>
+          </div>
+        </div>
+      <!-- Product 20 -->
+        <div class="col-md-4 col-lg-3">
+          <div class="card p-2 shadow-sm">
+            <img
+              src="https://static.zara.net/assets/public/fe71/1b5d/4c6b499f8a27/2224d940f7b4/00962309250-e1/00962309250-e1.jpg?ts=1753370236496&w=330"
+              class="card-img-top"
+              alt=""
+            />
+            <div class="card-body text-center">
+              <p class="fw-bold">RETRO FOOTBALL PRINT POLO SHIRT</p>
+              <p class="text-muted">$90</p>
+              <button class="btn btn-outline-danger heart-btn">♥</button>
+              <button class="btn btn-dark ms-2 add-to-cart">
+  Add to Cart
+</button>
+
+            </div>
+          </div>
+        </div>
+         <!-- Product 1 -->
+        <div class="col-md-4 col-lg-3">
+          <div class="card p-2 shadow-sm">
+            <img
+              src="https://static.zara.net/assets/public/3de1/d45d/24f540509a52/4165f5b8106f/08490744712-p/08490744712-p.jpg?ts=1764861663356&w=1024"
+              class="card-img-top"
+              alt=""
+            />
+            <div class="card-body text-center">
+              <p class="fw-bold">REVERSIBLE DOUBLE-FACED JACKET</p>
+              <p class="text-muted">$150</p>
+              <button class="btn btn-outline-danger heart-btn">♥</button>
+              <button class="btn btn-dark ms-2 add-to-cart">
+  Add to Cart
+</button>
+
+            </div>
+          </div>
+        </div>
+         <!-- Product 2 -->
+        <div class="col-md-4 col-lg-3">
+          <div class="card p-2 shadow-sm">
+            <img
+              src="https://static.zara.net/assets/public/79e3/1ab0/bcc14b3789dc/2c2eb126f6f7/04387352800-p/04387352800-p.jpg?ts=1761143518353&w=1024"
+              class="card-img-top"
+              alt=""
+            />
+            <div class="card-body text-center">
+              <p class="fw-bold">FAUX LEATHER JACKET WITH BELT</p>
+              <p class="text-muted">$110</p>
+              <button class="btn btn-outline-danger heart-btn">♥</button>
+              <button class="btn btn-dark ms-2 add-to-cart">
+  Add to Cart
+</button>
+
+            </div>
+          </div>
+        </div>
+         <!-- Product 3 -->
+        <div class="col-md-4 col-lg-3">
+          <div class="card p-2 shadow-sm">
+            <img
+              src="https://static.zara.net/assets/public/6044/42fe/67e24d0fa050/85d575d81e82/04083228427-p/04083228427-p.jpg?ts=1758107162434&w=1430"
+              class="card-img-top"
+              alt=""
+            />
+            <div class="card-body text-center">
+              <p class="fw-bold">Z1975 FAUX FUR COLLAR SHORT DENIM JACKET</p>
+              <p class="text-muted">$200</p>
+              <button class="btn btn-outline-danger heart-btn">♥</button>
+              <button class="btn btn-dark ms-2 add-to-cart">
+  Add to Cart
+</button>
+
+            </div>
+          </div>
+        </div>
+         <!-- Product 4 -->
+        <div class="col-md-4 col-lg-3">
+          <div class="card p-2 shadow-sm">
+            <img
+              src="https://static.zara.net/assets/public/4908/4ae6/68a54ae2b2dc/024fecc26e13/16045610624-p/16045610624-p.jpg?ts=1757949896096&w=1024"
+              class="card-img-top"
+              alt=""
+            />
+            <div class="card-body text-center">
+              <p class="fw-bold">METAL DETAIL SHOULDER BAG</p>
+              <p class="text-muted">$200</p>
+              <button class="btn btn-outline-danger heart-btn">♥</button>
+              <button class="btn btn-dark ms-2 add-to-cart">
+  Add to Cart
+</button>
+
+            </div>
+          </div>
+        </div>
+        
+         <!-- Product 5 -->
+        <div class="col-md-4 col-lg-3">
+          <div class="card p-2 shadow-sm">
+            <img
+              src="https://static.zara.net/assets/public/58aa/7460/d51d4eb9abff/e2a54c90a501/16616610721-p/16616610721-p.jpg?ts=1755185618499&w=1024"
+              class="card-img-top"
+              alt=""
+            />
+            <div class="card-body text-center">
+              <p class="fw-bold">ELONGATED SHOULDER BAG</p>
+              <p class="text-muted">$250</p>
+              <button class="btn btn-outline-danger heart-btn">♥</button>
+              <button class="btn btn-dark ms-2 add-to-cart">
+  Add to Cart
+</button>
+
+            </div>
+          </div>
+        </div>
+         <!-- Product 6 -->
+        <div class="col-md-4 col-lg-3">
+          <div class="card p-2 shadow-sm">
+            <img
+              src="https://static.zara.net/assets/public/9519/026c/235244c783fc/7d4509101756/20120881999-e1/20120881999-e1.jpg?ts=1753365615801&w=1024"
+              class="card-img-top"
+              alt=""
+            />
+            <div class="card-body text-center">
+              <p class="fw-bold">PINK FLAMBÉ EDT 90 ML / 3.04 oz</p>
+              <p class="text-muted">$250</p>
+              <button class="btn btn-outline-danger heart-btn">♥</button>
+              <button class="btn btn-dark ms-2 add-to-cart">
+  Add to Cart
+</button>
+
+            </div>
+          </div>
+        </div>
+         <!-- Product 7 -->
+        <div class="col-md-4 col-lg-3">
+          <div class="card p-2 shadow-sm">
+            <img
+              src="https://static.zara.net/assets/public/8c15/109b/bac24de4b36c/9c282b595b79/20120820999-e1/20120820999-e1.jpg?ts=1756115226388&w=1024"
+              class="card-img-top"
+              alt=""
+            />
+            <div class="card-body text-center">
+              <p class="fw-bold">ORCHID EDP 90ML / 3.04 oz</p>
+              <p class="text-muted">$300</p>
+              <button class="btn btn-outline-danger heart-btn">♥</button>
+              <button class="btn btn-dark ms-2 add-to-cart">
+  Add to Cart
+</button>
+
+            </div>
+          </div>
+        </div>
+         <!-- Product 8 -->
+        <div class="col-md-4 col-lg-3">
+          <div class="card p-2 shadow-sm">
+            <img
+              src="https://static.zara.net/assets/public/4b53/b42a/e30540139fda/b1b14326b247/08164709712-p/08164709712-p.jpg?ts=1752226756602&w=1024"
+              class="card-img-top"
+              alt=""
+            />
+            <div class="card-body text-center">
+              <p class="fw-bold">SHORT SLEEVE LINEN BLEND BLAZER</p>
+              <p class="text-muted">$250</p>
+              <button class="btn btn-outline-danger heart-btn">♥</button>
+              <button class="btn btn-dark ms-2 add-to-cart">
+  Add to Cart
+</button>
+
+            </div>
+          </div>
+        </div>
+         <!-- Product 9 -->
+        <div class="col-md-4 col-lg-3">
+          <div class="card p-2 shadow-sm">
+            <img
+              src="https://static.zara.net/assets/public/d4be/5e54/3aa747b09819/1d28e751d2a9/13125610800-e1/13125610800-e1.jpg?ts=1760612999125&w=1024"
+              class="card-img-top"
+              alt=""
+            />
+            <div class="card-body text-center">
+              <p class="fw-bold">VELVET-EFFECT ANKLE BOOTS</p>
+              <p class="text-muted">$450</p>
+              <button class="btn btn-outline-danger heart-btn">♥</button>
+              <button class="btn btn-dark ms-2 add-to-cart">
+  Add to Cart
+</button>
+
+            </div>
+          </div>
+        </div>
+         <!-- Product 10 -->
+        <div class="col-md-4 col-lg-3">
+          <div class="card p-2 shadow-sm">
+            <img
+              src="https://static.zara.net/assets/public/b54a/ac71/3b0841a88914/33a140d76ac4/12010610001-ult21/12010610001-ult21.jpg?ts=1756796356467&w=375"
+              class="card-img-top"
+              alt=""
+            />
+            <div class="card-body text-center">
+              <p class="fw-bold">HIGH-HEEL BOOTS</p>
+              <p class="text-muted">$500</p>
+              <button class="btn btn-outline-danger heart-btn">♥</button>
+              <button class="btn btn-dark ms-2 add-to-cart">
+  Add to Cart
+</button>
+
+            </div>
+          </div>
+        </div>
+        
+  
+    </section>
+      <footer class="bg-dark text-white text-center py-3 mt-4">
+      <p class="mb-0">&copy; 2025 3NSYM. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
